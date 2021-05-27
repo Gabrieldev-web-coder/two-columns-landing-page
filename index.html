@@ -3,66 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/scss/style.css">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/iconfonts.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 <body>
-
-  <h1>Implementa variables css <a href="https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties"></a></h1>
+<!--
   <h1>Implementa mejor sass<a href="https://css-tricks.com/approaches-media-queries-sass/"></a></h1>
   <h1>Usa rem y em para mantener bien los textos y cosas que tengan que ir de forma ordenada</h1>
   <h1>media queries em<a href="https://medium.com/zoosk-engineering/to-em-or-not-to-em-that-is-the-media-query-question-22f4a65e9747"></a></h1>
   <h1>why use css custom properties <a href="https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables"></a></h1>
-  Features
-  Team
-  Sign In
+-->
+<header id="header">
+  <nav class="header__nav">
+    <figure class="header__figure">
+      <img class="header__figure-img" src="/images/logo.svg" alt="Fylo logo">
+    </figure>
+    <ul class="header__ul">
+      <li>Features</li>
+      <li>Team</li>
+      <li>Sign In</li>
+    </ul>
+  </nav>
+</header>
 
-  All your files in one secure location, accessible anywhere.
+<main id="main">
+  <article class="main__articletwocolums">
+    <figure class="main__figure">
+      <img class="main__figure-img" src="/images/illustration-1.svg" alt="Ilustration">
+    </figure>
+    <div class="main__textZone">
+      <h1 class="main__h1">All your files in one secure location, accessible anywhere.</h1>
+      <p class="main__p">Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.</p>
+        <form class="main__form">
+          <input type="submit" value="Get Started" id="mail">
+          <input type="email" id="mail" required>
+        </form>
+      </div>
+      </article>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+<section class="main__sectionTwocolums">
+  <figure class="main__figure">
+    <img class="main__figure-img" src="/images/illustration-2.svg" alt="Ilustration productive">
+  </figure>
+  <div class="main__oneBlock">
+    <article class="main__oneBlock-article">
+      <h2 class="main__h2">Stay productive, wherever you are</h2>
+      <p class="main__p">Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.</p>
+        
+        <p class="main__p">Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!</p>
+          <div class="main__seeHow">
+            <figure class="main__seeHow-figure">
+            <img class="main__seeHow-figure-img" src="/images/icon-arrow.svg" alt="arrow fylo">
+          </figure>
+          <span class="main__seeHow-span">See how Fylo works</span>
+        </div>
+      </article>
 
-  Get Started
+      <article class="main__testimonial">
+        <p class="main__p">Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="main__user">
+            <figure class="main__user-figure">
+              <img class="main__user-figure-img" src="/images/avatar-testimonial.jpg" alt="Avatar user">
+            </figure>
+            <address>Kyle Burton</address>
+            <address>Founder & CEO, Huddle</address>
+          </div>
+        </article>
 
-  Stay productive, wherever you are
+      </div>
+  </section>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+  <article id="main__form">
+    <div class="main__textZone">
+      <h2 class="main__h2">Get early access today</h2>
+      <p class="main__p">It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <form class="main__form">
+        <input type="submit" value="Get Started For Free" id="email">  
+        <input type="email" name="put your email" id="email" required>
+      </form>
+    </article>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+</main>
 
-  See how Fylo works
+<footer id="footer">
+  <figure class="footer__figure">
+    <img class="footer__figure-img" src="/images/logo.svg" alt="Fylo logo">
+  </figure>
+  <div class="footer__address">
+    <div class="footer__address-container">
+      <figure class="footer__address-figure">
+        <img class="footer__address-figure-img" src="/images/icon-email.svg" alt="Email">
+      </figure>
+      <address>example@fylo.com</address>
+    </div>
+    <div class="footer__address-container">
+      <figure class="footer__address-figure">
+        <img class="footer__address-figure-img" src="/images/icon-phone.svg" alt="Phone">
+      </figure>
+      <address><span>Phone:</span>+1-543-123-4567</address>
+    </div>
+  </div>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+  <div class="footer__about">
+    <div class="footer__about-container">
+      <span>About Us</span>
+      <span>Jobs</span>
+      <span>Press</span>
+      <span>Blog</span>
+    </div>
+    <div class="footer__about-container">
+      <span>Contact Us</span>
+      <span>Terms</span>
+      <span>Privacy</span>
+    </div>
 
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
+    <div class="footer__about-icons">
+      <i class="icon-facebook-official"></i>
+      <i class="icon-twitter"></i>
+      <i class="icon-instagram"></i>
+    </div>
+  </div>
   </footer>
 </body>
 </html>
