@@ -8,6 +8,7 @@
     --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
     --font-body:'Open Sans', sans-serif;
     --width-images: 75%;
+    --width-logo-header:138px;
 }
 
 *{
@@ -17,10 +18,30 @@
 }
 
 body{
-    background-color: var(--neutral-light-grayish);
+    font-family: var(--font-body);
+    text-align: center;
+    color: var(--primary-dark-blue);
+}
+
+h1{
+    font-family: var(--font-headings-call-to-actions-header-navigation);
+}
+
+h2{
+    font-family: var(--font-headings-call-to-actions-header-navigation);
 }
 
 .main__figure-img{
     width: var(--width-images);
+}
+
+#main__form{
+    background-color: var(--primary-desatured-blue);
+    color: var(--neutral-light-grayish);
+}
+
+#footer{
+    color: var(--neutral-light-grayish);
+    background-color: var(--primary-dark-blue);
 }
 

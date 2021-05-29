@@ -8,6 +8,7 @@
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
   --width-images: 75%;
+  --width-logo-header:138px;
 }
 
 * {
@@ -18,11 +19,31 @@
 }
 
 body {
-  background-color: var(--neutral-light-grayish);
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+h1 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
+}
+
+h2 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
 }
 
 .main__figure-img {
   width: var(--width-images);
+}
+
+#main__form {
+  background-color: var(--primary-desatured-blue);
+  color: var(--neutral-light-grayish);
+}
+
+#footer {
+  color: var(--neutral-light-grayish);
+  background-color: var(--primary-dark-blue);
 }
 
 :root {
@@ -35,6 +56,7 @@ body {
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
   --width-images: 75%;
+  --width-logo-header:138px;
 }
 
 * {
@@ -45,11 +67,31 @@ body {
 }
 
 body {
-  background-color: var(--neutral-light-grayish);
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+h1 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
+}
+
+h2 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
 }
 
 .main__figure-img {
   width: var(--width-images);
+}
+
+#main__form {
+  background-color: var(--primary-desatured-blue);
+  color: var(--neutral-light-grayish);
+}
+
+#footer {
+  color: var(--neutral-light-grayish);
+  background-color: var(--primary-dark-blue);
 }
 
 :root {
@@ -62,6 +104,7 @@ body {
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
   --width-images: 75%;
+  --width-logo-header:138px;
 }
 
 * {
@@ -72,11 +115,31 @@ body {
 }
 
 body {
-  background-color: var(--neutral-light-grayish);
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+h1 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
+}
+
+h2 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
 }
 
 .main__figure-img {
   width: var(--width-images);
+}
+
+#main__form {
+  background-color: var(--primary-desatured-blue);
+  color: var(--neutral-light-grayish);
+}
+
+#footer {
+  color: var(--neutral-light-grayish);
+  background-color: var(--primary-dark-blue);
 }
 
 :root {
@@ -89,6 +152,7 @@ body {
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
   --width-images: 75%;
+  --width-logo-header:138px;
 }
 
 * {
@@ -99,10 +163,68 @@ body {
 }
 
 body {
-  background-color: var(--neutral-light-grayish);
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+h1 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
+}
+
+h2 {
+  font-family: var(--font-headings-call-to-actions-header-navigation);
 }
 
 .main__figure-img {
   width: var(--width-images);
+}
+
+#main__form {
+  background-color: var(--primary-desatured-blue);
+  color: var(--neutral-light-grayish);
+}
+
+#footer {
+  color: var(--neutral-light-grayish);
+  background-color: var(--primary-dark-blue);
+}
+
+/*-------------- H E A D E R ---------------- */
+#header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 1rem;
+}
+
+#header .header__nav .header__figure {
+  width: 100%;
+  max-width: var(--width-logo-header);
+  text-align: initial;
+}
+
+#header .header__nav .header__figure .header__figure-img {
+  width: 65%;
+}
+
+#header .header__nav .header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header__nav .header__ul li {
+  margin: 0rem .5rem;
+  cursor: pointer;
+  color: var(--primary-dark-blue);
 }
 /*# sourceMappingURL=style.css.map */
