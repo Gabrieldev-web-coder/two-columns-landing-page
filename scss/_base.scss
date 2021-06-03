@@ -7,7 +7,7 @@
     --neutral-light-gray:hsl(0, 0%, 75%);
     --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
     --font-body:'Open Sans', sans-serif;
-    --width-images: 75%;
+    --width-images: 80%;
     --width-logo-header:138px;
 }
 
@@ -23,12 +23,20 @@ body{
     color: var(--primary-dark-blue);
 }
 
-h1{
+.main__h1{
     font-family: var(--font-headings-call-to-actions-header-navigation);
+    font-size: 1.5em;
+    margin: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
 }
 
-h2{
+.main__h2{
     font-family: var(--font-headings-call-to-actions-header-navigation);
+    font-size: 1.2em;
+    margin: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
 }
 
 .main__figure-img{

@@ -26,6 +26,51 @@
                 cursor: pointer;
                 color: var(--primary-dark-blue);
             }
+            li:hover{
+                transition: .5s;
+                opacity: .8;
+            }
         }
     }
+}
+
+/*-------------- M A I N ---------------- */
+
+#main{
+    margin-top:6.5rem;
+    .main__p{
+        margin: 1rem;
+        line-height: 1.5rem;
+    }
+    .main__form{
+        @include form
+    }
+    .main__articletwocolums{
+        display: grid;
+        margin: 6.5rem 0rem;
+    }
+    .main__sectionTwocolums{
+        background-image: url(/images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 4rem;
+        //background-color: var(--neutral-light-grayish);
+   
+    .main__oneBlock{
+        .main__oneBlock-article{
+            .main__p{
+                text-align: left;
+            }
+        }
+        .main__seeHow{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin: 1rem;
+            .main__seeHow-figure{
+                margin: .1rem .2rem;
+            }
+        }
+    }
+}
 }
