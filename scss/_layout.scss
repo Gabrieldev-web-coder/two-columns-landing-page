@@ -53,11 +53,19 @@
         background-image: url(/images/bg-curve-mobile.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        padding-top: 4rem;
-        //background-color: var(--neutral-light-grayish);
-   
+        padding-top: 14%;
+        .main__figure{
+            background-color: var(--neutral-light-grayish);
+        }
     .main__oneBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--neutral-light-grayish);
         .main__oneBlock-article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .main__p{
                 text-align: left;
             }
@@ -65,11 +73,18 @@
         .main__seeHow{
             display: flex;
             flex-direction: row-reverse;
-            justify-content: flex-end;
+            justify-content: center;
             margin: 1rem;
+            color:#3DA08F;
+            border-bottom: 1px solid #3DA08F;
+            width: fit-content;
             .main__seeHow-figure{
                 margin: .1rem .2rem;
             }
+        }
+        /* <----------- C A R D - S T Y L E -----------> */ 
+        .main__testimonial{
+            @include testimonial-card
         }
     }
 }

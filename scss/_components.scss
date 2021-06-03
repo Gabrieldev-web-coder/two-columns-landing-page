@@ -30,3 +30,47 @@
         opacity: .8;
     }
 }
+
+@mixin testimonial-card {
+    background-color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 460px;
+    background-image: url(/images/icon-quotes.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 24px 18px;
+    .main__p{
+        text-align: left;
+        font-size: 12px;
+        padding: .5rem;
+        margin: 0;
+    }
+    .main__user{
+        display: flex;
+        padding: .5rem;
+        .main__user-name{
+            text-align: left;
+            margin-bottom: .3rem;
+            font-weight: 800;
+            font-style: normal;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-family: var(--font-headings-call-to-actions-header-navigation);
+        }
+        .main__user-founder{
+            font-style: normal;
+            font-size: 12px;
+        }
+        .main__user-figure{
+            margin-right: .5rem;
+            .main__user-figure-img{
+                width: 36px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
