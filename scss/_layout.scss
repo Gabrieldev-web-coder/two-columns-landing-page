@@ -84,7 +84,7 @@
         }
         /* <----------- C A R D - S T Y L E -----------> */ 
         .main__testimonial{
-            @include testimonial-card
+            @include testimonial-card // Go to components file to see it 
         }
     }
 }
