@@ -50,9 +50,7 @@
         margin: 6.5rem 0rem;
     }
     .main__sectionTwocolums{
-        background-image: url(/images/bg-curve-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
+        background:url(/images/bg-curve-mobile.svg) no-repeat top center/ contain;
         padding-top: 14%;
         .main__figure{
             background-color: var(--neutral-light-grayish);
@@ -85,6 +83,60 @@
         /* <----------- C A R D - S T Y L E -----------> */ 
         .main__testimonial{
             @include testimonial-card // Go to components file to see it 
+        }
+    }
+}
+        #main__form{
+            padding: 4rem 1.2rem;
+            .main__h2{
+                margin-top: 0;
+            }
+        }
+}
+/*-------------- F O O T E R ---------------- */
+#footer{
+    text-align: left;
+    padding: 4rem 2rem;
+    .footer__figure{
+        margin-bottom: 1rem;
+    }
+    .footer__address{
+        display: flex;
+        flex-direction: column-reverse;
+        .footer__address-container{
+            address{
+                font-style: normal;
+            }
+            display: flex;
+            margin: 1rem 0rem;
+            .footer__address-figure{
+                .footer__address-figure-img{
+                    margin: 0 1rem 0 0;
+                }
+            }
+        }
+    }
+    .footer__about{
+    display: flex;
+    flex-direction: column;
+    .footer__about-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    span{
+        margin:.8rem 0;
+        cursor: pointer;
+    }
+    }
+    .footer__about-icons{
+        text-align: center;
+        margin-top: 2rem;
+        i{
+            padding: .6rem;
+            margin: 0 .5rem;
+            border: 1px solid white;
+            border-radius: 100%;
+            cursor:pointer;
         }
     }
 }

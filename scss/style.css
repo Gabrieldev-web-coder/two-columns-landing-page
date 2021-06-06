@@ -1,6 +1,6 @@
 :root {
   --primary-dark-blue: hsl(243, 87%, 12%);
-  --primary-desatured-blue: hsl(238, 22%, 44%);
+  --primary-desatured-blue: hsl(239, 22%, 44%);
   --accent-bright-blue:hsl(224, 93%, 58%);
   --accent-moderate-cyan:hsl(170, 45%, 43%);
   --neutral-light-grayish:hsl(240, 75%, 98%);
@@ -56,7 +56,7 @@ body {
 
 :root {
   --primary-dark-blue: hsl(243, 87%, 12%);
-  --primary-desatured-blue: hsl(238, 22%, 44%);
+  --primary-desatured-blue: hsl(239, 22%, 44%);
   --accent-bright-blue:hsl(224, 93%, 58%);
   --accent-moderate-cyan:hsl(170, 45%, 43%);
   --neutral-light-grayish:hsl(240, 75%, 98%);
@@ -112,7 +112,7 @@ body {
 
 :root {
   --primary-dark-blue: hsl(243, 87%, 12%);
-  --primary-desatured-blue: hsl(238, 22%, 44%);
+  --primary-desatured-blue: hsl(239, 22%, 44%);
   --accent-bright-blue:hsl(224, 93%, 58%);
   --accent-moderate-cyan:hsl(170, 45%, 43%);
   --neutral-light-grayish:hsl(240, 75%, 98%);
@@ -168,7 +168,7 @@ body {
 
 :root {
   --primary-dark-blue: hsl(243, 87%, 12%);
-  --primary-desatured-blue: hsl(238, 22%, 44%);
+  --primary-desatured-blue: hsl(239, 22%, 44%);
   --accent-bright-blue:hsl(224, 93%, 58%);
   --accent-moderate-cyan:hsl(170, 45%, 43%);
   --neutral-light-grayish:hsl(240, 75%, 98%);
@@ -339,9 +339,7 @@ body {
 }
 
 #main .main__sectionTwocolums {
-  background-image: url(/images/bg-curve-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(/images/bg-curve-mobile.svg) no-repeat top center/contain;
   padding-top: 14%;
 }
 
@@ -405,17 +403,18 @@ body {
 }
 
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial {
-  background-color: white;
   padding: 2rem 1rem 1rem 1rem;
-  margin: 2rem;
+  margin: 4rem;
   border-radius: 10px;
   width: 85%;
   max-width: 460px;
-  background-image: url(/images/icon-quotes.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: 24px 18px;
+  /* In this i learned about shorthand properties in css */
+  background: url(/images/icon-quotes.svg) #fff no-repeat 24px 18px/20px;
+  /*background-position: top center;
+    background-repeat: no-repeat;                         All this! 
+    background-size: 20px;
+    background-position: 24px 18px; 
+    */
 }
 
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial .main__p {
@@ -434,12 +433,9 @@ body {
 
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial .main__user .main__user-name {
   text-align: left;
-  margin-bottom: .3rem;
-  font-weight: 800;
-  font-style: normal;
   letter-spacing: 1px;
-  font-size: 14px;
-  font-family: var(--font-headings-call-to-actions-header-navigation);
+  margin-bottom: .3rem;
+  font: 800 normal 14px var(--font-headings-call-to-actions-header-navigation);
 }
 
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial .main__user .main__user-founder {
@@ -454,5 +450,87 @@ body {
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial .main__user .main__user-figure .main__user-figure-img {
   width: 36px;
   border-radius: 100%;
+}
+
+#main #main__form {
+  padding: 4rem 1.2rem;
+}
+
+#main #main__form .main__h2 {
+  margin-top: 0;
+}
+
+/*-------------- F O O T E R ---------------- */
+#footer {
+  text-align: left;
+  padding: 4rem 2rem;
+}
+
+#footer .footer__figure {
+  margin-bottom: 1rem;
+}
+
+#footer .footer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#footer .footer__address .footer__address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0rem;
+}
+
+#footer .footer__address .footer__address-container address {
+  font-style: normal;
+}
+
+#footer .footer__address .footer__address-container .footer__address-figure .footer__address-figure-img {
+  margin: 0 1rem 0 0;
+}
+
+#footer .footer__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .footer__about .footer__about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+#footer .footer__about .footer__about-container span {
+  margin: .8rem 0;
+  cursor: pointer;
+}
+
+#footer .footer__about .footer__about-icons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#footer .footer__about .footer__about-icons i {
+  padding: .6rem;
+  margin: 0 .5rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
