@@ -7,8 +7,17 @@
   --neutral-light-gray:hsl(0, 0%, 75%);
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
-  --width-images: 80%;
+  --width-images: 70%;
   --width-logo-header:138px;
+  --header-margin:1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --width-images:100%;
+    --width-logo-header:200px;
+    --header-margin:2.5rem 2rem;
+  }
 }
 
 * {
@@ -63,8 +72,17 @@ body {
   --neutral-light-gray:hsl(0, 0%, 75%);
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
-  --width-images: 80%;
+  --width-images: 70%;
   --width-logo-header:138px;
+  --header-margin:1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --width-images:100%;
+    --width-logo-header:200px;
+    --header-margin:2.5rem 2rem;
+  }
 }
 
 * {
@@ -119,8 +137,17 @@ body {
   --neutral-light-gray:hsl(0, 0%, 75%);
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
-  --width-images: 80%;
+  --width-images: 70%;
   --width-logo-header:138px;
+  --header-margin:1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --width-images:100%;
+    --width-logo-header:200px;
+    --header-margin:2.5rem 2rem;
+  }
 }
 
 * {
@@ -175,8 +202,17 @@ body {
   --neutral-light-gray:hsl(0, 0%, 75%);
   --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
   --font-body:'Open Sans', sans-serif;
-  --width-images: 80%;
+  --width-images: 70%;
   --width-logo-header:138px;
+  --header-margin:1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --width-images:100%;
+    --width-logo-header:200px;
+    --header-margin:2.5rem 2rem;
+  }
 }
 
 * {
@@ -230,7 +266,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1.5rem 1rem;
+  margin: var(--header-margin);
 }
 
 #header .header__nav .header__figure {
@@ -407,7 +443,7 @@ body {
   margin: 4rem;
   border-radius: 10px;
   width: 85%;
-  max-width: 460px;
+  max-width: 305px;
   /* In this i learned about shorthand properties in css */
   background: url(/images/icon-quotes.svg) #fff no-repeat 24px 18px/20px;
   /*background-position: top center;
@@ -532,5 +568,81 @@ body {
   border: 1px solid white;
   border-radius: 100%;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #main .main__articletwocolums {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2% 48% 48% 2%;
+        grid-template-columns: 2% 48% 48% 2%;
+        grid-template-areas: '. tex img .';
+    margin: 6.5rem 0rem;
+    place-items: center;
+  }
+  #main .main__articletwocolums .main__figure {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  #main .main__articletwocolums .main__textZone {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: tex;
+    text-align: left;
+  }
+  #main .main__articletwocolums .main__textZone .main__form {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  #main .main__sectionTwocolums {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'tex img';
+    place-content: center;
+  }
+  #main .main__sectionTwocolums .main__figure {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  #main .main__sectionTwocolums .main__oneBlock {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: tex;
+    text-align: left;
+  }
+  #main .main__sectionTwocolums .main__oneBlock .main__oneBlock-article {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #main .main__articletwocolums .main__textZone .main__p {
+    margin: 1rem 6rem 1rem 1rem;
+  }
+  #main .main__articletwocolums .main__textZone .main__h1 {
+    font-size: 2.5em;
+    margin: 1rem;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  #main .main__articletwocolums .main__textZone .main__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #main .main__articletwocolums .main__textZone .main__form input[type=email] {
+    max-width: 384px;
+  }
+  #main .main__articletwocolums .main__textZone .main__form input[type=submit] {
+    max-width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
