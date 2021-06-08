@@ -7,8 +7,14 @@
     --neutral-light-gray:hsl(0, 0%, 75%);
     --font-headings-call-to-actions-header-navigation:'Raleway', sans-serif;
     --font-body:'Open Sans', sans-serif;
-    --width-images: 80%;
+    --width-images: 70%;
     --width-logo-header:138px;
+    --header-margin:1.5rem 1rem;
+    @media screen and (min-width:768px){
+        --width-images:100%;
+        --width-logo-header:200px;
+        --header-margin:2.5rem 2rem;
+    }
 }
 
 *{

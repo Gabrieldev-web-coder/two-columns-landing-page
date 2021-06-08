@@ -7,7 +7,7 @@
     .header__nav{
         display: flex;
         justify-content: space-between;
-        margin: 1.5rem 1rem;
+        margin: var(--header-margin);
         .header__figure{
             width: 100%;
             max-width: var(--width-logo-header);
@@ -141,3 +141,69 @@
     }
 }
 }
+
+@media screen and (min-width:768px){
+    #main{
+        .main__articletwocolums{
+            display: grid;
+            grid-template-columns: 2% 48% 48% 2%;
+            grid-template-areas: '. tex img .';
+            margin: 6.5rem 0rem;
+            place-items: center;
+            .main__figure{
+                grid-area: img;
+            }
+            .main__textZone{
+                grid-area: tex;
+                text-align: left;
+                .main__form{
+                    align-items: end;
+                }
+            }
+        }
+        .main__sectionTwocolums{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+            'tex img';
+            place-content: center;
+            .main__figure{
+                grid-area: img;
+            }
+            .main__oneBlock{
+                grid-area: tex;
+                text-align: left;
+                .main__oneBlock-article{
+                    align-items: unset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    #main{
+        .main__articletwocolums{
+            .main__textZone{
+                .main__p{
+                    margin: 1rem 6rem 1rem 1rem;
+                }
+                .main__h1{
+                    font-size: 2.5em;
+                    margin: 1rem;
+                    font-weight: 700;
+                    line-height: 3rem;
+                }
+                .main__form{
+                    flex-direction: row;
+                    input[type=email]{
+                        max-width: 384px;
+                    }
+                    input[type=submit]{
+                        max-width: 200px;
+                    }
+                    }
+                }
+            }
+        }
+    }
