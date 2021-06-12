@@ -56,18 +56,16 @@
     top: -8vh;
     left: 0%;
     display: block;
-    width: 100vw;
+    width: auto;
     height: 8vh;
     }
 
     .main__sectionTwocolums{
-        //background-color: var(--neutral-light-grayish);
         background-color: var(--neutral-light-grayish); 
     .main__oneBlock{
         display: flex;
         flex-direction: column;
         align-items: center;
-        //var(--neutral-light-grayish);
         .main__oneBlock-article{
             display: flex;
             flex-direction: column;
@@ -152,6 +150,10 @@
 
 @media screen and (min-width:768px){
     #main{
+        .main__sectionTwocolums::before{
+            background: url(/images/bg-curve-desktop.svg) top center/100% no-repeat;
+            width: 97vw;
+        }
         .main__articletwocolums{
             display: grid;
             grid-template-columns: 2% 48% 48% 2%;
@@ -181,6 +183,10 @@
             .main__oneBlock{
                 grid-area: tex;
                 text-align: left;
+                align-items: baseline;
+                .main__testimonial{
+                    margin: 4rem 1rem;
+                }
                 .main__oneBlock-article{
                     align-items: unset;
                 }

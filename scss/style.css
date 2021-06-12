@@ -381,7 +381,7 @@ body {
   top: -8vh;
   left: 0%;
   display: block;
-  width: 100vw;
+  width: auto;
   height: 8vh;
 }
 
@@ -576,6 +576,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  #main .main__sectionTwocolums::before {
+    background: url(/images/bg-curve-desktop.svg) top center/100% no-repeat;
+    width: 97vw;
+  }
   #main .main__articletwocolums {
     display: -ms-grid;
     display: grid;
@@ -619,6 +623,12 @@ body {
     -ms-grid-column: 2;
     grid-area: tex;
     text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #main .main__sectionTwocolums .main__oneBlock .main__testimonial {
+    margin: 4rem 1rem;
   }
   #main .main__sectionTwocolums .main__oneBlock .main__oneBlock-article {
     -webkit-box-align: unset;
