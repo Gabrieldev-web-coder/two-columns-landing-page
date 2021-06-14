@@ -437,10 +437,25 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 
 #main .main__sectionTwocolums .main__oneBlock .main__seeHow .main__seeHow-figure {
   margin: .1rem .2rem;
+}
+
+#main .main__sectionTwocolums .main__oneBlock .main__seeHow:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #49b19f;
+  border-bottom: 1px solid #49b19f;
+}
+
+#main .main__sectionTwocolums .main__oneBlock .main__seeHow:hover .main__seeHow-figure {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 #main .main__sectionTwocolums .main__oneBlock .main__testimonial {
@@ -494,7 +509,7 @@ body {
 }
 
 #main #main__form {
-  padding: 4rem 1.2rem;
+  padding: 5rem 1.2rem;
 }
 
 #main #main__form .main__h2 {
@@ -562,6 +577,12 @@ body {
   cursor: pointer;
 }
 
+#footer .footer__about span:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: var(--primary-desatured-blue);
+}
+
 #footer .footer__icons {
   text-align: center;
   margin-top: 2rem;
@@ -573,6 +594,13 @@ body {
   border: 1px solid white;
   border-radius: 100%;
   cursor: pointer;
+}
+
+#footer i:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: var(--primary-desatured-blue);
+  border: 1px solid var(--primary-desatured-blue);
 }
 
 @media screen and (min-width: 768px) {
